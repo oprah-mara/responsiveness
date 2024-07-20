@@ -1,0 +1,662 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins";
+    font-size: 16px;
+    /* margin: auto; */
+}
+
+
+
+/* this is mobile */
+
+/* @media(max-width: 600px){ */
+     .container{
+          width: 100%;
+          /* margin-inline: auto; */
+          /* max-width: 1200px; */
+          border: 2px solid red;
+          
+     }
+     .site-heading{
+          text-align: center;
+          padding: 0.5em;
+          background-color: rgb(2,29,73);
+          color: white;
+     }
+     .site-heading a{
+          color: white;
+          font-size: 0.8rem;
+          font-weight: 500;
+     }
+     .fa-bars{
+          font-size: 2rem;
+          color: rgb(65,85,118);
+     }
+     .fa-cart-shopping{
+          font-size: 1.5em;
+          color: rgb(255,79,51);
+          padding-block: 0.3em ;
+     }
+     .site-nav{
+          display: flex;
+          justify-content: space-between;
+          padding: 0.4em;
+     }
+     .site-nav h2{
+          color: rgb(2,29,73);
+          font-family: serif;
+     }
+     .section-one{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: rgb(248,249,243);
+          padding: 2rem 1rem;
+          text-align: center;
+          
+     }
+     h1{
+          font-size: 2.5rem;
+          color: rgb(2,29,73);
+          font-weight: 600;
+          text-align: center;
+     }
+     .section-one img{
+          mix-blend-mode: multiply;
+          width: 100%;
+          max-width: 70%;
+          margin-inline: 2em;
+          
+     }
+     .section-one-button{
+          background-color: rgb(255,71,0);
+          color: white;
+          font-size: 1rem;
+          font-family: "poppins";
+          font-weight: 500;
+          display: block;
+          margin-inline: auto;
+          margin-block: 2em;
+          width: 100%;
+          max-width: 15rem;
+          padding-block:1em;
+          border: none;
+          border-radius: 0.4em;
+          box-shadow: 0.2em 0.2em 0.2em  rgb(2,29,73);  
+          transition: all 250ms ease-in-out;     
+     }
+     .section-one-button:hover{
+          cursor: pointer;
+          background-color: rgb(2,29,73);
+          color: white;
+          box-shadow: 0.2em 0.2em 0.2em rgb(255,71,0);  
+     }
+     .section-one p{
+          color:  rgb(2,29,73);
+          /* font-size: 1.2rem; */
+          width: 100%;
+          /* border: 1px solid red */
+     }
+     .section-two{
+          background-color:  rgb(2,29,73); 
+          padding: 2rem 1rem;
+          
+     }
+     .section-two p{
+          text-align: center;
+          color: white;
+          font-size: 1.2rem;
+          font-weight: 600;
+          /* border: 2px solid red; */ 
+     }
+     .section-two-button{  
+          font-size: 1rem;
+          font-weight: 500;
+          display: block;
+          margin-inline: auto;
+          padding-block: 1em;
+          width: 100%;
+          max-width: 15rem;
+          background-color: white;
+          color: rgb(1, 21, 55);
+          margin-top: 2em;
+          border: none;
+          border-radius: .5em;
+          box-shadow: 0.2em 0.2em 0.2em rgb(255,71,0);  
+          transition: all 150ms ease-in-out;
+     }
+     .section-two-button:hover{
+          cursor: pointer;
+          background-color: rgb(255,71,0);
+          color: white;
+     }
+     .section-logos{
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     flex-wrap: wrap;
+     align-items: center;
+     margin: 2rem;
+     }
+     .section-logos img{
+          /* border: 2px solid red; */
+          width: 2rem;
+          height: auto;
+          object-fit: cover;
+          /* margin-left: 1.5em; */
+     
+     }
+     
+     .bestseller-products{
+          display: grid;
+          grid-template-columns: repeat(1,minmax(1fr,18.75rem));
+          gap: 1.5rem;
+          margin-block: 4rem;
+          background-color: rgb(254,254,254); 
+          padding-inline: 2rem ;
+          width: 100%;
+          max-width: 25rem;
+          margin-inline: auto;
+          background-color: rgb(249, 243, 243);
+     }
+     .balancePowderImg{
+          border-radius: 0.8em;
+          width: 100%;
+     
+     }
+     
+     .sweetkick-balancePowder{
+          width: 100%;
+          padding: 1em;
+          display: grid;
+          grid-template-columns: subgrid;
+          font-family: "poppins";
+          border-radius: 1em;
+          background-color: white;
+          margin-block: 1em;
+          min-width: 60px;
+     }
+     .fivestars{
+          color: rgb(255,71,0);
+          font-size: 0.8rem;
+          font-weight: 500;
+     }
+     .sweetkick-ptags{
+          max-width: 100%;
+     }
+     
+     .sweetkick-ptags p:first-child{
+          font-weight: 500;
+          font-size: 0.9rem;
+     }
+     .sweetkick-ptags p:last-child{
+          font-size: 0.7rem;
+          font-weight: 500;
+          height: 16em;
+          width: 100%;
+          max-width: 50rem;
+          margin-block: 1em;
+          /* border: 2px solid red; */
+     
+         
+     }
+     .dollarsign{
+          margin-block: 1em;
+          font-size: 0.8rem;
+          font-weight: 500;
+          text-align: center;
+               
+     }
+     .balancePowder-button{
+          display: block;
+          width: 100%;
+          max-width: 15rem;
+          margin-inline: auto;
+          padding-block: 1em;
+          background-color: rgb(255,71,0);
+          color: white;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          font-size: 0.8rem;
+          border: 1px solid rgb(2,29,73) ;
+          border-radius: 12px;
+          box-shadow: 3px 3px 2px  rgb(2,29,73);  
+          transition: all 250ms ease-in-out;
+     }
+     .balancePowder-button:hover{
+          cursor: pointer;
+          background-color:  rgb(2,29,73);
+          color: white;
+          border-color: black;
+     }
+     .more-info{
+          text-align: center;
+          margin-top: 1em;
+          color: black;
+          font-size: 1rem;
+          font-weight: 500;
+     }
+
+
+     .banner{
+          background-color: rgb(2,29,73);
+          color: white;
+          width: 100%;
+
+     }
+     #first-ptag{
+          font-size: 1.4rem;
+          font-weight: 600;
+          padding-block: 1em;
+     }
+     .banner-ul{
+          margin-inline: 2em;
+     }
+     .banner-li img{
+          max-width: 60px;
+          margin-block: 2.5rem;
+     }
+     .banner-li{
+          display: flex;
+          list-style: none;
+          width: 100%;
+     }
+
+     .banner-li p:last-child{
+          font-size: 0.8rem;
+          font-weight: 500;
+     }
+     #li-tag{
+          font-size: 1.1rem;
+          font-weight: 600;
+     }
+     .text-content{
+          padding-inline: 1rem;
+          margin-block: 1rem;
+     }
+
+
+     .column{
+          width: 100%;
+          border: 2px solid black;
+
+     }
+     .col-1,.col-2{
+          list-style: none;
+     }
+    .col-1 li:first-child{
+     color: rgb(2,29,73);
+     font-size: 1.8rem;
+     font-weight: 600;
+     margin: 1em;
+     width: 100%;
+    }
+    .col-1 li:nth-child(2){
+     color: rgb(255,72,1);
+     font-weight: 600;
+     margin: 1.5em;
+    }
+    .column-two{
+     background-color: rgb(242,238,229);
+     margin: 1.5em;
+     padding-block: 1em;
+     border-radius: 10px;
+     height: 50vh;
+    }
+    #cd{
+     border-radius: 100%;
+     padding: 0.8em;
+     color: white;
+     background-color: rgb(255,72,1);
+    }
+    .col-2 li:first-child{
+     font-size: 1.1rem;
+     color: rgb(2,29,73);
+     font-weight: 500;
+     padding: 2em;
+
+    }
+    .col-2 li:nth-child(2){
+     color: rgb(255,72,1);
+     font-size: .9rem;
+     font-weight: 400;
+     margin-inline: 2.5em;
+    }
+    .col-2 li:last-child{
+     font-size: .9rem;
+     color: rgb(2,29,73);
+     font-weight: 500;
+     margin-inline: 2.5em;
+    }
+
+/* } */
+@media(min-width:601px){
+     .container{
+          width: 100%;
+          /* margin-inline: auto; */
+          /* max-width: 1200px; */
+          border: 2px solid red;
+          
+     }
+     .site-heading{
+          text-align: center;
+          padding: 0.5em;
+          background-color: rgb(2,29,73);
+          color: white;
+     }
+     .site-heading a{
+          color: white;
+          font-size: 0.8rem;
+          font-weight: 500;
+     }
+     .fa-bars{
+          font-size: 2rem;
+          color: rgb(65,85,118);
+     }
+     .fa-cart-shopping{
+          font-size: 1.5em;
+          color: rgb(255,79,51);
+          padding-block: 0.3em ;
+     }
+     .site-nav{
+          display: flex;
+          justify-content: space-between;
+          padding: 0.4em;
+     }
+     .site-nav h2{
+          color: rgb(2,29,73);
+          font-family: serif;
+     }
+     .section-one{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: rgb(248,249,243);
+          padding: 2rem 1rem;
+          text-align: center;
+          
+     }
+     h1{
+          font-size: 2.5rem;
+          color: rgb(2,29,73);
+          font-weight: 600;
+          text-align: center;
+     }
+     .section-one img{
+          mix-blend-mode: multiply;
+          width: 100%;
+          max-width: 70%;
+          margin-inline: 2em;
+          
+     }
+     .section-one-button{
+          background-color: rgb(255,71,0);
+          color: white;
+          font-size: 1rem;
+          font-family: "poppins";
+          font-weight: 500;
+          display: block;
+          margin-inline: auto;
+          margin-block: 2em;
+          width: 100%;
+          max-width: 15rem;
+          padding-block:1em;
+          border: none;
+          border-radius: 0.4em;
+          box-shadow: 0.2em 0.2em 0.2em  rgb(2,29,73);  
+          transition: all 250ms ease-in-out;     
+     }
+     .section-one-button:hover{
+          cursor: pointer;
+          background-color: rgb(2,29,73);
+          color: white;
+          box-shadow: 0.2em 0.2em 0.2em rgb(255,71,0);  
+     }
+     .section-one p{
+          color:  rgb(2,29,73);
+          /* font-size: 1.2rem; */
+          width: 100%;
+          /* border: 1px solid red */
+     }
+     .section-two{
+          background-color:  rgb(2,29,73); 
+          padding: 2rem 1rem;
+          
+     }
+     .section-two p{
+          text-align: center;
+          color: white;
+          font-size: 1.2rem;
+          font-weight: 600;
+          /* border: 2px solid red; */ 
+     }
+     .section-two-button{  
+          font-size: 1rem;
+          font-weight: 500;
+          display: block;
+          margin-inline: auto;
+          padding-block: 1em;
+          width: 100%;
+          max-width: 15rem;
+          background-color: white;
+          color: rgb(1, 21, 55);
+          margin-top: 2em;
+          border: none;
+          border-radius: .5em;
+          box-shadow: 0.2em 0.2em 0.2em rgb(255,71,0);  
+          transition: all 150ms ease-in-out;
+     }
+     .section-two-button:hover{
+          cursor: pointer;
+          background-color: rgb(255,71,0);
+          color: white;
+     }
+     .section-logos{
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     flex-wrap: wrap;
+     align-items: center;
+     margin: 2rem;
+     }
+     .section-logos img{
+          /* border: 2px solid red; */
+          width: 2rem;
+          height: auto;
+          object-fit: cover;
+          /* margin-left: 1.5em; */
+     
+     }
+     
+     .bestseller-products{
+          display: grid;
+          grid-template-columns: repeat(2,minmax(1fr,18.75rem));
+          gap: 1.5rem;
+          margin-block: 4rem;
+          background-color: rgb(254,254,254); 
+          padding-inline: 2rem ;
+          width: 100%;
+          max-width: 25rem;
+          margin-inline: auto;
+          background-color: rgb(249, 243, 243);
+     }
+     .balancePowderImg{
+          border-radius: 0.8em;
+          width: 100%;
+     
+     }
+     
+     .sweetkick-balancePowder{
+          width: 100%;
+          padding: 1em;
+          display: grid;
+          grid-template-columns: subgrid;
+          font-family: "poppins";
+          border-radius: 1em;
+          background-color: white;
+          margin-block: 1em;
+          min-width: 60px;
+     }
+     .fivestars{
+          color: rgb(255,71,0);
+          font-size: 0.8rem;
+          font-weight: 500;
+     }
+     .sweetkick-ptags{
+          max-width: 100%;
+     }
+     
+     .sweetkick-ptags p:first-child{
+          font-weight: 500;
+          font-size: 0.9rem;
+     }
+     .sweetkick-ptags p:last-child{
+          font-size: 0.7rem;
+          font-weight: 500;
+          height: 16em;
+          width: 100%;
+          max-width: 50rem;
+          margin-block: 1em;
+          /* border: 2px solid red; */
+     
+         
+     }
+     .dollarsign{
+          margin-block: 1em;
+          font-size: 0.8rem;
+          font-weight: 500;
+          text-align: center;
+               
+     }
+     .balancePowder-button{
+          display: block;
+          width: 100%;
+          max-width: 15rem;
+          margin-inline: auto;
+          padding-block: 1em;
+          background-color: rgb(255,71,0);
+          color: white;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          font-size: 0.8rem;
+          border: 1px solid rgb(2,29,73) ;
+          border-radius: 12px;
+          box-shadow: 3px 3px 2px  rgb(2,29,73);  
+          transition: all 250ms ease-in-out;
+     }
+     .balancePowder-button:hover{
+          cursor: pointer;
+          background-color:  rgb(2,29,73);
+          color: white;
+          border-color: black;
+     }
+     .more-info{
+          text-align: center;
+          margin-top: 1em;
+          color: black;
+          font-size: 1rem;
+          font-weight: 500;
+     }
+
+
+     .banner{
+          background-color: rgb(2,29,73);
+          color: white;
+          width: 100%;
+
+     }
+     #first-ptag{
+          font-size: 1.4rem;
+          font-weight: 600;
+          padding-block: 1em;
+     }
+     .banner-ul{
+          margin-inline: 2em;
+     }
+     .banner-li img{
+          max-width: 60px;
+          margin-block: 2.5rem;
+     }
+     .banner-li{
+          display: flex;
+          list-style: none;
+          width: 100%;
+     }
+
+     .banner-li p:last-child{
+          font-size: 0.8rem;
+          font-weight: 500;
+     }
+     #li-tag{
+          font-size: 1.1rem;
+          font-weight: 600;
+     }
+     .text-content{
+          padding-inline: 1rem;
+          margin-block: 1rem;
+     }
+
+
+     .column{
+          width: 100%;
+
+     }
+     .col-1,.col-2{
+          list-style: none;
+     }
+    .col-1 li:first-child{
+     color: rgb(2,29,73);
+     font-size: 1.8rem;
+     font-weight: 600;
+     margin: 1em;
+     width: 100%;
+    }
+    .col-1 li:nth-child(2){
+     color: rgb(255,72,1);
+     font-weight: 600;
+     margin: 1.5em;
+    }
+    .column-two{
+     background-color: rgb(242,238,229);
+     margin: 1.5em;
+     padding-block: 1em;
+     border-radius: 10px;
+     height: 50vh;
+    }
+    #cd{
+     border-radius: 100%;
+     padding: 0.8em;
+     color: white;
+     background-color: rgb(255,72,1);
+    }
+    .col-2 li:first-child{
+     font-size: 1.1rem;
+     color: rgb(2,29,73);
+     font-weight: 500;
+     padding: 2em;
+
+    }
+    .col-2 li:nth-child(2){
+     color: rgb(255,72,1);
+     font-size: .9rem;
+     font-weight: 400;
+     margin-inline: 2.5em;
+    }
+    .col-2 li:last-child{
+     font-size: .9rem;
+     color: rgb(2,29,73);
+     font-weight: 500;
+     margin-inline: 2.5em;
+    }
+}
+
+
+
+
+
+
+
